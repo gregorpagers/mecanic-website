@@ -296,7 +296,12 @@ h3 {
             background-color: colors.$red-mechanic;
             color: colors.$white-text;
             text-transform: uppercase;
-            border: none
+            border: none;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: colors.$red-mechanic-press;
         }
     }
 }

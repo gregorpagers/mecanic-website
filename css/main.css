@@ -315,6 +315,10 @@ h3 {
   color: #ebebeb;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
+}
+.contact-section form button:active {
+  background-color: #661417;
 }
 
 .map-section {
