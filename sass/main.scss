@@ -225,3 +225,84 @@ h3 {
     color: colors.$white-text;
     background-color: black;
 }
+
+.services-section {
+    h2 {
+        text-align: center;
+    }
+}
+
+.services {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10vh;
+
+    .service {
+        place-self: center;
+        text-align: center;
+        margin-top: 10vh;
+        width: 80%;
+
+        h3 {
+            margin: 30px auto;
+        }
+
+        i {
+            margin-top: 15px;
+            font-size: 48px;
+            color: colors.$red-mechanic;
+        }
+    }
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+    min-height: 40vh;
+    margin-bottom: 7vh;
+
+
+    h2 {
+        margin: 20px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px;
+        grid-template-rows: 1fr 200px 1fr;
+        gap: 5px;
+
+        label {
+            display: block;
+            text-align: center;
+        }
+
+        textarea.message {
+            grid-column: 2 / 5;
+            font-family: sans-serif;
+            padding: 5px;
+        }
+
+        button {
+            grid-column: 4/5;
+            padding: 10px;
+            font-size: 15px;
+            background-color: colors.$red-mechanic;
+            color: colors.$white-text;
+            text-transform: uppercase;
+            border: none
+        }
+    }
+}
+
+.map-section {
+    max-width: 1920px;
+    width: 100%;
+    font-size: 0;
+}
